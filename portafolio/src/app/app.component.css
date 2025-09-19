@@ -1,0 +1,22 @@
+:root{
+    padding: 0;
+    margin: 0;
+}
+
+.separadror {
+    border: none;    
+    height: 3px;        
+    background-color: #E6243F;  
+    width: 43%;   
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    border-radius: 5px;
+    /* Simula un efecto LED brillante */
+    box-shadow: 
+      0 0 5px #E6243F,
+      0 0 10px #E6243F,
+      0 0 20px #E6243F,
+      0 0 40px #E6243F;
+}
+

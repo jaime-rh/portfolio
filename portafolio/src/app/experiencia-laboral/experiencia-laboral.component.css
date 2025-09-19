@@ -1,0 +1,72 @@
+.sectionExperienciaLaboral {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.sectionTituloExperienciaLaboral {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    padding-top: 75px;
+}
+
+.iconoTitulo{
+    font-size: 32px; 
+    color: #E6243F;
+}
+
+.titulo{
+    font-size: 55px; 
+    font-weight: bold; 
+    margin: 0;
+}
+
+.cardExperienciaLaboral {
+    width: 60%;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+}
+
+.cardExperienciaLaboral:hover {
+    border-color: #E6243F; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.contenidoCardExperienciaLaboral{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloCard{
+    font-size: 35px;
+    padding-top: 10px;
+    color: #E6243F;
+}
+
+.nombre{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.contenidoIzquierda{
+    width: 44%;
+}
+
+.descripcion{
+    font-size: 18px;
+    margin: 0;
+    text-align: justify;
+    padding-right: 20px;
+}

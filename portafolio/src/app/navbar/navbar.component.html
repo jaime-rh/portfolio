@@ -1,0 +1,17 @@
+<section class="navbar"  [class.scrolled]="isScrolled">
+    <section class="sectionBotonesNav">
+        <button class="botonesNav" (click)="emitScrollTo('navbar')">Inicio</button>
+        <button class="botonesNav" (click)="emitScrollTo('proyectos')">Proyectos</button>
+        <button class="botonesNav" (click)="emitScrollTo('experiencia')">Experiencia</button>
+        <button class="botonesNav" (click)="emitScrollTo('sobreMi')">Sobre mí</button>
+    </section>
+    <section class="sectionBotonesRed">
+        <button class="fab fa-github botonesRedes" onclick="window.open('https://github.com/jaime-rh', '_blank')"></button>
+        <button class="fab fa-linkedin botonesRedes" onclick="window.open('https://www.linkedin.com/in/jaime-romero-hern%C3%A1ndez-b2b7b81ba/', '_blank')"></button>
+    </section>
+    <section class="sectionBotonModo">
+        <button (click)="toggleModo()" class="botonModo">
+            <i [class]="modoOscuro ? 'fa-regular fa-moon' : 'fa-regular fa-sun'"></i>
+        </button>
+    </section>
+</section>
