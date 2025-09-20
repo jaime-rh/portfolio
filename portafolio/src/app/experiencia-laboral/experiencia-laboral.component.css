@@ -70,3 +70,105 @@
     text-align: justify;
     padding-right: 20px;
 }
+
+/* Tablets (max-width 1024px) */
+@media (max-width: 1024px) {
+  .cardExperienciaLaboral {
+    width: 80%;
+  }
+
+  .titulo {
+    font-size: 42px;
+  }
+
+  .tituloCard {
+    font-size: 28px;
+  }
+
+  .nombre {
+    font-size: 18px;
+  }
+
+  .descripcion {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+
+  .contenidoCardExperienciaLaboral {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contenidoIzquierda {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .sectionTituloExperienciaLaboral {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .iconoTitulo {
+    font-size: 30px;
+  }
+
+  .titulo {
+    font-size: 38px;
+  }
+}
+
+/* Móviles pequeños (max-width 600px) */
+@media (max-width: 600px) {
+  .cardExperienciaLaboral {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  .titulo {
+    font-size: 32px;
+    padding-top: 40px;
+  }
+
+  .tituloCard {
+    font-size: 24px;
+  }
+
+  .nombre {
+    font-size: 16px;
+    padding-right: 5px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .contenidoCardExperienciaLaboral {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contenidoIzquierda {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+   .sectionTituloExperienciaLaboral {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .iconoTitulo {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  .titulo {
+    font-size: 35px;
+  }
+}

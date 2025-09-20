@@ -1,86 +1,159 @@
-.navbar{
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, 0.6s ease;
-    z-index: 1000;
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  background-color: transparent;
 }
 
 .navbar.scrolled {
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.sectionBotonesNav{
-    display: flex;
-    align-items: center;
-}
-.sectionBotonesRed{
-    display: flex;
-    align-items: center;
-}
-.sectionBotonesModo{
-    display: flex;
-    align-items: center;
+.sectionBotonesNav,
+.sectionBotonesRed,
+.sectionBotonesModo {
+  display: flex;
+  align-items: center;
 }
 
-.botonesNav{
-    background-color: transparent;
-    color: #E6243F;
-    font-weight: 500;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    margin-left: 20px;
-    transition: transform 0.7s ease;
+/* Estilos botones */
+.botonesNav {
+  background-color: transparent;
+  color: #E6243F;
+  font-weight: 500;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.7s ease;
+  white-space: nowrap; /* evita que se rompa el texto */
 }
 
-.botonesNav:hover{
-    transform: scale(1.1);  
+.botonesNav:hover {
+  transform: scale(1.1);
 }
 
-.botonesRedes{
-    background-color: transparent;
-    color:#E6243F;
-    border: none;
-    font-size: 35px;
-    cursor: pointer;
-    margin-left: 20px;
-    cursor: pointer;
-    padding: 0;
-    transition: transform 0.7s ease;
+.botonesRedes {
+  background-color: transparent;
+  color: #E6243F;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 0;
+  transition: transform 0.7s ease;
 }
 
-.botonesRedes:hover{
-    transform: scale(1.2);  
+.botonesRedes:hover {
+  transform: scale(1.2);
 }
 
-.botonModo{
-    /*background-color: rgb(241, 241, 241);*/
-    background-color: transparent;
-    margin-right: 25px;
-    border-radius: 50%;
-    border: 1px solid transparent;
-    color:#E6243F;
-    font-size: 25px;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    transition: 
-        transform 0.7s ease,
-        border-color 0.5s ease,
-        border-width 0.7s ease,
-        background-color 0.5s ease;
+.botonModo {
+  background-color: transparent;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: #E6243F;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  transition:
+    transform 0.7s ease,
+    border-color 0.5s ease,
+    border-width 0.7s ease,
+    background-color 0.5s ease;
+    margin-right: 30px;
 }
 
 .botonModo:hover {
-    background-color: rgb(241, 241, 241);
-    transform: scale(1.1);
-    border-color: #E6243F; 
-    border-width: 1px;    
+  background-color: rgb(241, 241, 241);
+  transform: scale(1.1);
+  border-color: #E6243F;
+  border-width: 1px;
+}
+
+/* --- Responsive --- */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .botonesNav {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  .botonesRedes {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+
+  .botonModo {
+    font-size: 22px;
+    padding: 8px;
+    margin-left: 15px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px;
+  }
+
+  /* Los botones principales en fila centrada que ocupa todo el ancho */
+  .sectionBotonesNav {
+    flex-basis: 100%;
+    justify-content: center;
+    
+  }
+
+  /* Botones sociales y modo juntos, centrados en otra fila */
+  .sectionBotonesRed,
+  .sectionBotonesModo {
+    flex-basis: auto;
+    justify-content: center;
+    gap: 15px;
+    margin: 8px 0;
+  }
+
+  /* Hacemos que estén en una misma fila */
+  .sectionBotonesRed {
+    display: flex;
+  }
+
+  .sectionBotonesModo {
+    display: flex;
+  }
+
+  /* Ajustes de tamaños y márgenes */
+  .botonesNav {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .botonesRedes {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .botonModo {
+    font-size: 20px;
+    padding: 6px;
+    margin-left: 20;
+  }
 }

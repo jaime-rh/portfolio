@@ -11,8 +11,9 @@
     padding-bottom: 130px;
     padding-top: 130px;
     z-index: 0;
-    overflow: hidden; /* para que ::before no sobresalga */
+    overflow: hidden;
 }
+
 
 .sectionPresentation::before {
     content: '';
@@ -85,4 +86,67 @@ a{
     font-size: 48px;
     margin-bottom: 15px;
     font-weight: 900;
+}
+
+@media (max-width: 1024px) {
+  .sectionPresentation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .fotoJaime {
+    width: 200px;
+  }
+
+  .pPresentation {
+    font-size: 18px;
+  }
+
+  .h1Presentation {
+    font-size: 36px;
+  }
+
+  .botonesPresentation {
+    flex-wrap: wrap;
+    gap: 10px;
+    white-space: normal;
+    word-break: break-word; 
+  }
+
+  .botonesPresentation .botonesPresentation {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionPresentation {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .fotoJaime {
+    width: 150px;
+  }
+
+  .pPresentation {
+    font-size: 16px;
+  }
+
+  .h1Presentation {
+    font-size: 28px;
+  }
+
+  .sectionBotonesPresentation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botonesPresentation {
+    width: 100%;
+    max-width: 300px;
+    margin: 8px 0;
+    white-space: normal; 
+    word-break: break-word;
+  }
 }

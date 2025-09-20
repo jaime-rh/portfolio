@@ -70,3 +70,70 @@
     font-weight: bold;
     color: #00CCFF;
 }
+
+/* ---------- RESPONSIVE: Tablets ---------- */
+@media (max-width: 1024px) {
+  .sectionTituloSobreMi {
+    padding-top: 80px;
+  }
+
+  .titulo {
+    font-size: 38px;
+  }
+
+  .iconoTitulo {
+    font-size: 29px;
+  }
+
+  .sectionContenidoSobreMi {
+    width: 80%;
+  }
+
+  .fotoSobreMi {
+    width: 250px;
+  }
+
+  .desc {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+
+
+/* ---------- RESPONSIVE: Móviles ---------- */
+@media (max-width: 600px) {
+  .sectionTituloSobreMi {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    margin-top: 40px;
+  }
+
+  .titulo {
+    font-size: 35px;
+  }
+
+  .iconoTitulo {
+    font-size: 26px;
+  }
+
+  .sectionContenidoSobreMi {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+
+  .fotoSobreMi {
+    width: 180px;
+    margin-top: 15px;
+  }
+
+  .desc {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 0 10px;
+    text-align: justify;
+  }
+}

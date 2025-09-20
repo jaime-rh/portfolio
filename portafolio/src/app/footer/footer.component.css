@@ -1,10 +1,12 @@
-.sectionFooter{
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 245px;
-    align-items: center;
+.sectionFooter {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 245px;
+  align-items: center;
+  flex-wrap: wrap; /* permite que los elementos se acomoden en varias líneas si no caben */
+  text-align: center;
 }
 
 a{
@@ -17,4 +19,21 @@ a{
 a:hover{
     text-decoration: none;
     color: #B71C2A;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 1024px) {
+  .sectionFooter {
+    gap: 50px;
+    padding: 40px 20px;
+  }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+  .sectionFooter {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
 }
