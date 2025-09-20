@@ -119,7 +119,6 @@
   .sectionBotonesNav {
     flex-basis: 100%;
     justify-content: center;
-    
   }
 
   /* Botones sociales y modo juntos, centrados en otra fila */
@@ -128,12 +127,13 @@
     flex-basis: auto;
     justify-content: center;
     gap: 15px;
-    margin: 8px 0;
+    margin-top: 6px;
   }
 
   /* Hacemos que estén en una misma fila */
   .sectionBotonesRed {
     display: flex;
+    margin-left: 20px;
   }
 
   .sectionBotonesModo {
@@ -152,8 +152,9 @@
   }
 
   .botonModo {
-    font-size: 20px;
+    font-size: 22px;
     padding: 6px;
-    margin-left: 20;
+    margin-left: 10px;
+    margin-top: 6px;
   }
 }
